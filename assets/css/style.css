@@ -137,6 +137,58 @@ h2{
   font-style: normal; 
 }
 
+.taglist {
+  list-style-type: square;   
+  padding-left: 20px;        
+}
+
+.taglist li {
+  color: #000;               
+  position: relative; 
+}
+
+.taglist li::marker {
+  color: #17abb3;               
+}
+
+h2 {
+  border-bottom: 1px solid #d6d1d1; 
+  padding-bottom: 5px;              
+  margin-bottom: 10px;              
+}
 
 /* MAIN*/
 
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;               /* Ajoute un peu d’air autour du texte */
+  border-left: 3px solid transparent; /* Bordure gauche invisible par défaut */
+  transition: all 0.3s ease;   /* Animation fluide */
+}
+
+.item-title {
+  font-weight: bold;
+  font-size: 15px;
+  color: #000;
+}
+
+.item-sub {
+  font-size: 13px;
+  font-style: italic;
+  color: #555;
+}
+
+.item-date {
+  font-size: 14px;
+  color: #17abb3;
+  text-align: right;  
+  white-space: nowrap; /* Empêche le retour à la ligne */
+}
+.item:hover {
+  background-color: #f0fafa;   /* Fond clair au survol */
+  border-left: 3px solid #17abb3; /* Trait vertical bleu */
+}
