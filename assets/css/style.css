@@ -9,7 +9,7 @@ body {
 
 /*  HEADER  */
 header {
-  background-color: rgb(23, 171, 179); 
+  background-color: #17abb3; 
   color: white; 
   display: flex; 
   align-items: center; 
@@ -165,9 +165,9 @@ h2 {
   grid-template-columns: 1fr auto;
   align-items: center;
   margin-bottom: 15px;
-  padding: 10px;               /* Ajoute un peu d’air autour du texte */
-  border-left: 3px solid transparent; /* Bordure gauche invisible par défaut */
-  transition: all 0.3s ease;   /* Animation fluide */
+  padding: 10px;               
+  border-left: 3px solid transparent; 
+  transition: all 0.3s ease;   
 }
 
 .item-title {
@@ -186,9 +186,31 @@ h2 {
   font-size: 14px;
   color: #17abb3;
   text-align: right;  
-  white-space: nowrap; /* Empêche le retour à la ligne */
+  white-space: nowrap; 
 }
 .item:hover {
-  background-color: #f0fafa;   /* Fond clair au survol */
-  border-left: 3px solid #17abb3; /* Trait vertical bleu */
+  background-color: #f0fafa;   
+  border-left: 3px solid #17abb3; 
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: #17abb3;
+    text-align: center;   
+    padding: 15px;
+}
+
+footer p {
+    color: white;         
+    font-style: italic;   
+    margin: 10px 0 0;     
+}
+
+footer img {
+    margin: 0 10px;   
+    width: 30px;      
+    height: auto;
+    vertical-align: middle;
+    cursor: pointer;
 }
