@@ -1,4 +1,6 @@
+
 body {
+  
   margin: 0 auto; 
   font-family: Arial, sans-serif; 
   background: #f5f5f5; 
@@ -72,3 +74,65 @@ header img {
   text-decoration: none; 
 }
 
+.content {
+  display: flex;
+  flex-direction: row; 
+}
+/*ASSIDE*/
+aside {
+  flex: 1;
+  background: #e3e3e3;
+  padding: 28px 22px 36px;
+}
+
+main {
+  flex: 3;
+  padding: 20px;
+}
+
+p {
+  text-indent: 30px;
+}
+
+h2{
+    color:#17abb3;
+}
+.competences-grid {
+  display: grid;
+  grid-template-columns: 1fr auto; 
+  row-gap: 8px;
+  align-items: center;
+}
+
+.stars {
+  color: #17abb3;    
+  font-size: 16px;
+  
+}
+
+.label strong {
+  font-weight: 700;
+}
+
+
+.langues {
+  display: grid;
+  row-gap: 6px;
+}
+
+.lang-row {
+  display: grid;
+  grid-template-columns: 1fr auto; 
+  align-items: baseline;
+}
+
+.lang { 
+  text-align: left; 
+  font-weight: 700; 
+}
+
+.lvl { 
+  text-align: right; 
+  opacity: 0.8; 
+  font-style: normal; 
+}
